@@ -28,7 +28,7 @@ struct MilkDecorator: public BeverageBase {
   }
 
   virtual auto name() -> string {
-    return base->name() + " + " + "Milk";
+    return base->name().append(" + Milk");
   }
 
 private:
@@ -45,7 +45,7 @@ struct PearlDecorator: public BeverageBase {
   }
 
   virtual auto name() -> string {
-    return base->name() + " + " + "Pearl";
+    return base->name().append(" + Pearl");
   }
 
 private:
